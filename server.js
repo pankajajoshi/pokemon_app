@@ -24,6 +24,11 @@ app.get("/pokemon", (req, res) => {
   });
 });
 
+app.get("/pokemon/:id", (req, res) => {
+  const id = req.params.id;
+  res.send(id);
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
