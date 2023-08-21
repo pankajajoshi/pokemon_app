@@ -1,8 +1,15 @@
 import React from 'react';
 
 const myStyle = {
-  color: '#ffffff',
-  backgroundColor: '#000000',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'lightblue',
+  backgroundColor: 'Teal',
+  padding: '20px',
+  fontSize: '24px',
+  marginTop :'100px',
 };
 
 class Index extends React.Component {

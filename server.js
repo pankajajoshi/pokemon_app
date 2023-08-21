@@ -15,7 +15,9 @@ app.engine("jsx", require("express-react-views").createEngine());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Pokemon App!");
+  res.send(
+    "<style>body { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: lightyellow; font-size: 40px; }</style><div><h1>Welcome to the Pokemon App!</h1></div>"
+  );
 });
 
 app.get("/pokemon", (req, res) => {

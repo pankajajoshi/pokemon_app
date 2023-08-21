@@ -1,8 +1,17 @@
 import React from 'react';
 
 const myStyle = {
-  color: '#ffffff',
-  backgroundColor: '#000000',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'black',
+    backgroundColor: 'lightgrey',
+    marginLeft: '10%',
+    marginRight: '20%',
+    padding: '20px',
+    marginTop :'100px',
+    fontSize: '24px',
 };
 
 class Show extends React.Component {
