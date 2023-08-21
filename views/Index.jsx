@@ -18,8 +18,14 @@ class Index extends React.Component {
     });
 
     // Render the list of Pokemon names
-    const pokemonList = capitalizedPokemon.map(p => (
-      <li key={p.id}>{p.name}</li>
+    // const pokemonList = capitalizedPokemon.map(p => (
+    //   <li key={p.id}>{p.name}</li>
+    // ));
+
+    const pokemonList = capitalizedPokemon.map((p, index) => (
+      <li key={p.id}>
+        <a href={`/pokemon/${index}`}>{p.name}</a>
+      </li>
     ));
 
     return (
