@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 const pokemon = require("./models/pokemon.js");
+//const pokemon = require("./models/pokemon.js");
 
 require("@babel/register")({
   presets: ["@babel/preset-react"],
@@ -26,8 +27,15 @@ app.get("/pokemon", (req, res) => {
 
 app.get("/pokemon/:id", (req, res) => {
   const id = req.params.id;
-  res.send(id);
+  const selectedPokemon = pokemon[id];
+  selectedPokemon.img = `${selectedPokemon.img}.jpg`; // Adding .jpg extension to the image URL
+  res.render("show", { pokemon: selectedPokemon });
 });
+
+// app.get("/pokemon/:id", (req, res) => {
+//   const id = req.params.id;
+//   res.send(id);
+// });
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
