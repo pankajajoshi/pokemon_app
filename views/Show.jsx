@@ -12,6 +12,8 @@ const myStyle = {
     padding: '20px',
     marginTop :'100px',
     fontSize: '24px',
+    boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)',
+    
 };
 
 class Show extends React.Component {
