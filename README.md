@@ -23,7 +23,11 @@ Practicing index and show, new and create routes with express
 <hr />
 
 <h4>Prerequisites</h4>
-JavaScript
-Express
-Node
-JSX
+<ul>
+<li>JavaScript</li>
+<li>Express</li>
+<li>Node</li>
+<li>JSX</li>
+  
+</ul>
+
